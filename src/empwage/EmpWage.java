@@ -16,19 +16,23 @@ public class EmpWage {
 		case 0:
 			System.out.println("Employee is Present");
 			System.out.println("Employee earn = " + numberOfHours * wagePerHour);
-			System.out.println("Employee earn per Month =" + numberOfHours * wagePerHour * workingDayInAMonth);
-		break;
+			int totalHourPerMonth = 1;
+			while (totalHourPerMonth <= 100) {
+				totalHourPerMonth++; }
+				System.out.println("Employee earn in a month =" + totalHourPerMonth * wagePerHour);
+			break;
 		case 1:
 			System.out.println("Employee is doing Part Time");
 			System.out.println("Employee earn = " + numberOfHoursForPartTime * wagePerHour);
-			System.out.println("Employee earn per Month =" + numberOfHoursForPartTime * wagePerHour * workingDayInAMonth);
+			System.out
+					.println("Employee earn per Month =" + numberOfHoursForPartTime * wagePerHour * workingDayInAMonth);
 
-		break;
+			break;
 		case 2:
 			System.out.println("Employee is not Present");
 			System.out.println("Employee earn = 0");
 			System.out.println("Employee earn = 0");
-		break;
+			break;
 		}
 	}
 }
